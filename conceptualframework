@@ -1,0 +1,43 @@
+//Libraries and Data Structures//
+import datetime
+import requests  # For retrieving external financial data
+
+class Asset:
+    def __init__(self, name, quantity, purchase_price, purchase_date):
+        # ... (initialize attributes)
+
+class Portfolio:
+    def __init__(self):
+        self.assets = []
+
+    def add_asset(self, asset):
+        # ... (add asset to portfolio)
+
+    def calculate_total_value(self):
+        # ... (retrieve current prices and calculate total)
+
+//User Input and Data Storage//
+def get_user_input():
+    # ... (prompt user for asset details and store in Asset objects)
+
+portfolio = Portfolio()
+while True:
+    user_choice = input("Add asset (a), view portfolio (v), or exit (q): ")
+    if user_choice == "a":
+        asset = get_user_input()
+        portfolio.add_asset(asset)
+    elif user_choice == "v":
+        portfolio.calculate_total_value()
+        # ... (display portfolio details)
+    else:
+        break
+
+//Intergrate with External API//
+def get_current_price(asset_type, asset_id):
+    if asset_type == "crypto":
+        url = f"https://api.example.com/crypto/{asset_id}/price"
+    elif asset_type == "stock":
+        url = f"https://api.example.com/stocks/{asset_id}/price"
+    # ... (handle other asset types)
+    response = requests.get(url)
+    return response.json()["price"]
