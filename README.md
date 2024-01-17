@@ -35,7 +35,7 @@ FinTRACK is currently under development, so your feedback is invaluable! We stri
 
 **Join the community:**
 
-Share your feedback and suggestions on our GitHub repository (link).
+Share your feedback and suggestions on our GitHub repository [(link)](https://github.com/heavybrea/fintech).
 Follow me on Twitter [(link)](https://twitter.com/Heavybrea) for updates and news.
 
 FinTRACK is free and open-source, so feel free to contribute to its development!
